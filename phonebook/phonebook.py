@@ -1,5 +1,3 @@
-
-
 class PhoneBook():
     def __init__(self) -> None:
         self.list = {}
@@ -18,3 +16,9 @@ class PhoneBook():
                 if  number1.startswith(number2):
                     return False
         return True
+    
+    def get_names(self):
+        return self.list.keys()
+
+    def get_numbers(self):
+        return self.list.values()

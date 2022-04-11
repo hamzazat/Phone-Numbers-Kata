@@ -1,7 +1,5 @@
 import unittest
 
-
-import unittest
 from phonebook import PhoneBook
 
 
@@ -13,8 +11,8 @@ class PhoneBookTest(unittest.TestCase):
         pass
 
     def test_lookup_by_name(self):
-        self.phonebook.add("Hamza", "12345")
-        number = self.phonebook.lookup("Hamza")
+        self.phonebook.add("Test 0", "12345")
+        number = self.phonebook.lookup("Test 0")
         self.assertEqual("12345", number)
 
     def test_missing_name(self):
@@ -40,4 +38,6 @@ class PhoneBookTest(unittest.TestCase):
         self.assertFalse(self.phonebook.is_consistant())
 
     def test_phonebook_adds_names_and_numbers(self):
-        pass
+        self.phonebook.add("Test 0", "12345")
+        self.assertIn("Test 0", self.phonebook.get_names())
+        self.assertIn("12345", self.phonebook.get_numbers())
