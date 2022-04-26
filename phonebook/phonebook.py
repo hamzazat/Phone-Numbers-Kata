@@ -1,4 +1,4 @@
-class PhoneBook():
+class PhoneBook:
     def __init__(self) -> None:
         self.list = {}
 
@@ -13,10 +13,10 @@ class PhoneBook():
             for name2, number2 in self.list.items():
                 if name1 == name2:
                     continue
-                if  number1.startswith(number2):
+                if number1.startswith(number2):
                     return False
         return True
-    
+
     def get_names(self):
         return self.list.keys()
 
