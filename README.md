@@ -1,5 +1,9 @@
 # Phone Numbers Code Kata
 
+[![Python Unit Test](https://github.com/hamzazat/Phone-Numbers-Kata/actions/workflows/test.yml/badge.svg)](https://github.com/hamzazat/Phone-Numbers-Kata/actions/workflows/test.yml)
+
+This is just a playground for tests and github actions
+
 This repo contains some sample data you could use to help test your solution to the Phone Numbers code kata. It also contains the python script I used to create the sample data. You can tweak it to create data that suits your needs.
 
 To run the generate_data.py script, you'll need to install [Python 3](http://python.org).
